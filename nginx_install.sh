@@ -8,6 +8,8 @@ make
 sudo make install
 sudo rm /etc/nginx/sites-available/default
 wget https://raw.githubusercontent.com/anu3030/nginx-demo/master/default /etc/nginx/sites-available/
+sudo mkdir /var/www/example
+wget https://raw.githubusercontent.com/anu3030/nginx-demo/master/index2.html /var/www/example/
 sudo service nginx reload
 sudo rm /etc/init.d/nginx
 sudo wget https://raw.githubusercontent.com/anu3030/nginx-demo/master/nginx /etc/init.d/
